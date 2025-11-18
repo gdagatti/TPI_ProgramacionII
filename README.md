@@ -38,31 +38,31 @@ Tiene una relación **1 → 1** con el empleado.
 # 🗂 **Arquitectura del Proyecto**
 
 ```
-src/
- ├── Dao/
- │     ├── EmpleadoDao.java
- │     ├── LegajoDao.java
- │     └── GenericDao.java
- │
- ├── Entities/
- │     ├── Empleado.java
- │     ├── Legajo.java
- │     └── EstadoLegajo.java
- │
- ├── Service/
- │     ├── EmpleadoService.java
- │     ├── LegajoService.java
- │     └── GenericService.java
- │
- ├── config/
- │     ├── DatabaseConnection.java
- │     └── db.properties
- │
- ├── main/
- │     ├── Main.java
- │     └── AppMenu.java
- │
- └── sql/
+├── src/
+│   ├── config/
+│   │   ├── DatabaseConnection.java
+│   │   └── db.properties 
+│   │
+│   ├── Entities/
+│   │   ├── Empleado.java
+│   │   ├── Legajo.java
+│   │   └── EstadoLegajo.java
+│   │
+│   ├── Dao/
+│   │   ├── GenericDao.java
+│   │   ├── EmpleadoDao.java
+│   │   └── LegajoDao.java
+│   │
+│   ├── Service/
+│   │   ├── GenericService.java
+│   │   ├── EmpleadoService.java
+│   │   └── LegajoService.java
+│   │
+│   └── main/
+│       ├── Main.java
+│       └── AppMenu.java
+│
+└── sql/
        ├── estructura.sql
        └── datos.sql (opcional)
 ```
